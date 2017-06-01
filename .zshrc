@@ -12,6 +12,11 @@ esac
 
 alias p="python "
 alias py="python "
+alias ru="ruby "
+alias rb="ruby "
+alias n="node "
+alias no="node "
+
 alias l="ls"
 alias ls="ls --color"
 alias ll="ls -la"
