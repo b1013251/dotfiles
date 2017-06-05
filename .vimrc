@@ -40,16 +40,15 @@ syntax on
 set t_Co=256
 colorscheme molokai
 
-set nocompatible
 set number
-set cursorline
-set laststatus=2
-set cmdheight=2
-set showmatch
-set whichwrap=b,s,h,l,<,>,[,]  
-set scrolloff=8 
-set nobackup
-set noswapfile
+set cursorline "カーソル
+set laststatus=2 "ステータスバー
+set cmdheight=2 "メッセージ2行
+set showmatch " 括弧表示
+set whichwrap=b,s,h,l,<,>,[,] "カーソル折り返す
+set scrolloff=8 "8行上にスペース
+set nobackup " バックアップファイルを作らない
+set noswapfile " スワップファイルを作らない
 
 " タブをスペースに
 set expandtab
@@ -60,10 +59,12 @@ set autoindent
 " set noexpandtab
 " set softtabstop=0
 
-set list
+set list "見えない文字を表示
 set listchars=tab:»-,trail:-,nbsp:%,eol:↲
 
+" ESC -> Ctrl+j
 imap <c-j> <esc>
+vmap <c-j> <esc>
 
 " Ctrl-e で実行
 autocmd BufRead,BufNewFile *.py nnoremap <C-e> :!python %
